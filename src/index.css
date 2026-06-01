@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Kantumruy Pro', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-khmer: 'Kantumruy Pro', sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #030712;
+  color: #f1f5f9;
+}
+
+/* ======================================================== */
+/* PREMIUM HIGH-CONTRAST GLASSMORPHISM (DARK GLOW THEME)  */
+/* ======================================================== */
+
+.glass-panel {
+  background: rgba(13, 18, 43, 0.65);
+  backdrop-filter: blur(24px) saturate(130%);
+  -webkit-backdrop-filter: blur(24px) saturate(130%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel-heavy {
+  background: rgba(10, 15, 36, 0.85);
+  backdrop-filter: blur(32px) saturate(140%);
+  -webkit-backdrop-filter: blur(32px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.55),
+    inset 0 1px 2px rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card-hover:hover {
+  background: rgba(19, 26, 60, 0.8);
+  border-color: rgba(99, 102, 241, 0.45);
+  transform: translateY(-3px);
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.45),
+    0 0 15px rgba(99, 102, 241, 0.2);
+}
+
+.glass-sidebar {
+  background: rgba(8, 11, 28, 0.75);
+  backdrop-filter: blur(28px) saturate(120%);
+  -webkit-backdrop-filter: blur(28px) saturate(120%);
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-header {
+  background: rgba(7, 10, 26, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-input {
+  background: rgba(5, 7, 20, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f8fafc;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-input:focus {
+  background: rgba(10, 14, 38, 0.85);
+  border-color: rgba(99, 102, 241, 0.85);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+  outline: none;
+}
+
+.glass-pill-active {
+  background: rgba(99, 102, 241, 0.2);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  color: #818cf8;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.15);
+}
+
+.glass-pill-inactive {
+  color: #94a3b8;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+.glass-pill-inactive:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+}
+
+/* Glass Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Ambient Background Aura Lights - Gorgeous Rich Vibrant Glow */
+.ambient-glowing-dots::before,
+.ambient-glowing-dots::after {
+  content: "";
+  position: fixed;
+  width: 700px;
+  height: 700px;
+  border-radius: 9999px;
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(150px);
+  opacity: 0.38;
+}
+
+.ambient-glowing-dots::before {
+  top: -200px;
+  left: -200px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.28) 0%, transparent 80%);
+}
+
+.ambient-glowing-dots::after {
+  bottom: -250px;
+  right: -200px;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.22) 0%, transparent 80%);
+}
+
+/* High Contrast adjustments for flawless dark readability */
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+}
+
+/* Elegant Table Row Hover Effects */
+#school-mgmt-root tr {
+  transition: all 0.2s ease-in-out;
+}
+#school-mgmt-root tr:hover {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Samraong School Dashboard",
+  "description": "School management dashboard for Samraong Primary School featuring staff data, student data, and academic results pages with a beautiful modern design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
